@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+    <!-- link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+      }
+      body {
+        background-color: hsl(0, 0%, 8%);
+      }
+      .container {
+        background-color: hsl(0, 0%, 12%);
+        color: hsl(0, 0%, 100%);
+        display: flexbox;
+        justify-content: center;
+        max-width: 350px;
+        margin: 250px auto;
+        padding: 20px;
+        border-radius: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .container > * {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .green-text {
+        color: hsl(75, 94%, 57%);
+      }
+      .logo {
+        display: block;
+        width: 100px;
+        border-radius: 50%;
+        margin: 30px auto;
+      }
+      button {
+        display: block;
+        width: 100%;
+        margin: 8px auto;
+        padding: 20px;
+        border: none;
+        background-color: hsl(0, 0%, 20%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 5px;
+        transition: all 0.3s;
+      }
+      button:hover {
+        background-color: hsl(75, 94%, 57%);
+        color: hsl(0, 0%, 8%);
+        transition: all 0.3s;
+      }
+      a {
+        text-decoration: none;
+      }
+      p {
+        font-size: 14px;
+        color: rgb(163, 163, 163);
+      }
+      @media (max-width: 700px) {
+        .container {
+          margin: 30% 20px 30% 20px;
+        }
+        button {
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="logo" class="logo" />
+      <h1>Jessica Randall</h1>
+      <p class="green-text">London, United Kingdom</p>
+      <p>"Front-end developer and avid reader."</p>
+
+      <a href="#"><button>GitHub</button></a>
+      <a href="#"><button>Frontend Mentor</button></a>
+      <a href="#"><button>LinkedIn</button></a>
+      <a href="#"><button>Twitter</button></a>
+      <a href="#"><button>Instagram</button></a>
+    </div>
+  </body>
+</html>
